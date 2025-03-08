@@ -124,6 +124,7 @@ class PiperProcessManager:
 
             wav_dir = tempfile.TemporaryDirectory()
             piper_args = [
+                "--cuda",
                 "--model",
                 str(onnx_path),
                 "--config",
